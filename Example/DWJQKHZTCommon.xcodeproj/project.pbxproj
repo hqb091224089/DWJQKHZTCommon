@@ -26,9 +26,9 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61810E6A443597B8880CB938 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		674E91549166017A3F421165 /* DWJQKHZTCommon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DWJQKHZTCommon.podspec; path = ../DWJQKHZTCommon.podspec; sourceTree = "<group>"; };
-		88EB991A23FEF4674B677176 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		61810E6A443597B8880CB938 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		674E91549166017A3F421165 /* DWJQKHZTCommon.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DWJQKHZTCommon.podspec; path = ../DWJQKHZTCommon.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		88EB991A23FEF4674B677176 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B9D1D34020641F49FA13993C /* Pods-DWJQKHZTCommon_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DWJQKHZTCommon_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DWJQKHZTCommon_Tests/Pods-DWJQKHZTCommon_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FE97813A2AB6C8DFEC6D815C /* Pods_DWJQKHZTCommon_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DWJQKHZTCommon_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -114,7 +114,6 @@
 				B9D1D34020641F49FA13993C /* Pods-DWJQKHZTCommon_Tests.debug.xcconfig */,
 				543714F89E8B91C3663243D3 /* Pods-DWJQKHZTCommon_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
