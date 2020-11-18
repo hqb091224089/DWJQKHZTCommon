@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Common_NoData" translatesAutoresizingMaskIntoConstraints="NO" id="7CC-Dh-GJw">
+                    <rect key="frame" x="46" y="0.0" width="158" height="176"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7CC-Dh-GJw" secondAttribute="height" multiplier="122:136" id="61T-TY-XgJ"/>
+                        <constraint firstAttribute="width" secondItem="7CC-Dh-GJw" secondAttribute="height" multiplier="161:123" id="nI1-0b-FKt"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="nI1-0b-FKt"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7CC-Dh-GJw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="7aI-LE-E8T"/>
+                <constraint firstAttribute="trailing" secondItem="7CC-Dh-GJw" secondAttribute="trailing" constant="20" id="KkV-gs-83j"/>
+                <constraint firstItem="7CC-Dh-GJw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="46" id="Llv-lm-GJT"/>
+                <constraint firstItem="7CC-Dh-GJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QBF-HU-gik"/>
+                <constraint firstItem="7CC-Dh-GJw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jZE-YG-Hy2"/>
+                <constraint firstAttribute="trailing" secondItem="7CC-Dh-GJw" secondAttribute="trailing" constant="46" id="n4f-KN-pGv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7aI-LE-E8T"/>
+                    <exclude reference="KkV-gs-83j"/>
+                    <exclude reference="jZE-YG-Hy2"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="59" y="74"/>
+        </view>
+        <view contentMode="scaleToFill" id="2Qw-u0-yhX" customClass="DWJQRetryEmptyView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NetworkFail" translatesAutoresizingMaskIntoConstraints="NO" id="ovO-Fw-7Rz">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ovO-Fw-7Rz" secondAttribute="height" multiplier="1:1" id="m3Z-pe-osI"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32H-Z4-mYN">
+                    <rect key="frame" x="35.5" y="238" width="129" height="34"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="请点击页面刷新">
+                        <color key="titleColor" red="0.086274509799999996" green="0.17254901959999999" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="retry:" destination="2Qw-u0-yhX" eventType="touchUpInside" id="TD0-fB-Lbd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ovO-Fw-7Rz" firstAttribute="centerX" secondItem="2Qw-u0-yhX" secondAttribute="centerX" id="Cq2-an-irt"/>
+                <constraint firstItem="ovO-Fw-7Rz" firstAttribute="leading" secondItem="2Qw-u0-yhX" secondAttribute="leading" id="FMe-cd-4kR"/>
+                <constraint firstAttribute="bottom" secondItem="32H-Z4-mYN" secondAttribute="bottom" constant="8" id="QDc-Zy-QlB"/>
+                <constraint firstItem="ovO-Fw-7Rz" firstAttribute="top" secondItem="2Qw-u0-yhX" secondAttribute="top" id="pia-AQ-rPf"/>
+                <constraint firstItem="32H-Z4-mYN" firstAttribute="centerX" secondItem="2Qw-u0-yhX" secondAttribute="centerX" id="v1h-HN-ffL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="retryBtn" destination="32H-Z4-mYN" id="auZ-am-91c"/>
+            </connections>
+            <point key="canvasLocation" x="430.39999999999998" y="492.95352323838085"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Common_NoData" width="122" height="136"/>
+        <image name="NetworkFail" width="185" height="185"/>
+    </resources>
+</document>

@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 dwzq kaihu zhangting  common files here.
                        DESC
 
-  s.homepage         = 'https://github.com/hqb091224089/DWJQKHZTCommon.git'
+  s.homepage         = 'https://github.com/hqb091224089/DWJQKHZTCommon'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '568687557@qq.com' => '568687557@qq.com' }
