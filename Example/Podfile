@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DWJQKHZTCommon_Tests' do
+  pod 'DWJQKHZTCommon', :path => '../'
+  
+  
+end
